@@ -1,30 +1,15 @@
-@media (max-width: 55em){
-    html{
-        font-size: 90%;
-    }
-    .content{
-        grid-template-columns:3fr;
+/******************************/
+/* BELOW 944PX (Tablets) */
+/******************************/
+@media (max-width: 59em){
+    .dashboard{
+        height: 100%;
     }
     .main-nav{
         display: none;
     }
-    .header-icon-box{
-        display: flex;
-        gap: 1.4rem;
-    }
-    .search-btn{
-        background-size: cover;
-        cursor: pointer;
-        width: 19%;
-        height: 1.2rem;
-        width: 1.2rem;
-    }
-    .search{
-        width: 20vw;
-    }
-    .work-progress{
-        column-gap: 1.2rem;
-        row-gap: 1.2rem;
+    .content{
+        grid-template-columns: 1fr;
     }
     .client-img{
         height: 3.6rem;
@@ -141,18 +126,6 @@
         width: 5.2rem;
         font-size: 0.7rem;
     }
-}
-@media (max-width: 40em){
-    .work-progress{
-        grid-template-columns: 1fr;
-    }
-    .header-icon-box{
-        display: flex;
-        gap: 0.6rem;
-    }
-    .project{
-        margin-top: 2.2rem;
-    }
     .main-header{
         padding: 0.6rem 0.8rem 0.6rem 0.8rem;
     }
@@ -161,19 +134,19 @@
         width: 1.2rem;
         margin-top: 0.2rem;
     }
-    .header-primary{
-        font-size: 1.2rem;
-        font-weight: 500;
-        margin-top: 0.2rem;
-    }
-    .header-link-box{
-        gap: 0.4rem;
-    }
     .header-img{
         cursor: pointer;
     }
     .header-link{
         display: none;
+    }
+    .header-icon-box{
+        display: flex;
+        gap: 1.4rem;
+    }
+    .header-primary{
+        font-size: 1.2rem;
+        font-weight: 700;
     }
     .client-primary{
         font-size: 1rem;
@@ -197,10 +170,12 @@
         height: 100vh;
     }
 }
-@media (max-width: 70em){
+/******************************/
+/* BELOW 544PX (Phones) */
+/******************************/
+@media (max-width: 34em){
     .work-progress{
-        column-gap: 0.6rem;
-        row-gap: 0.6rem;
+        grid-template-columns: 1fr;
     }
     .project{
         margin: 1.6rem;
@@ -225,5 +200,9 @@
     }
     .container{
         height: 130vh;
+    }
+    .header-icon-box{
+        display: flex;
+        gap: 1rem;
     }
 }

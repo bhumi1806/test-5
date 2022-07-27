@@ -21,7 +21,7 @@ body{
 }
 .dashboard{
     background-color: #f1fdf2;
-    height: 30rem;
+    height: 100vh;
 }
 .main-header{
     padding: 0.8rem 1.2rem 0.8rem 2.4rem;
@@ -37,6 +37,7 @@ body{
 .header-icon-box{
     display: flex;
     gap: 4.2rem;
+    align-items: center;
 }
 .open-btn{
     cursor: pointer;
@@ -63,10 +64,16 @@ form{
 }
 .search-btn{
     border: none;
-    background: url(img/user9.png) no-repeat center;
-    width: 8%;
+    height: 1.6rem;
+    width: 1.6rem;
+    background: none;
     cursor: pointer;
     background-size: cover;
+}
+.search-icon{
+    height: 1rem;
+    width: 1rem;
+    color: black;
 }
 .search{
     border: none;
@@ -159,7 +166,7 @@ form{
     background-color: #fff;
     border-radius: 50px;
     /* max-height: 800px; */
-    height: 44%;
+    height: 100vh;
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -335,6 +342,7 @@ form{
     height: 1.4rem;
     width: 4.8rem;
     font-size: 0.6rem;
+    font-weight: 700;
     font-family: sans-serif;
     color: #25bcbe;
     background-color: #d3f2f2;
@@ -460,6 +468,7 @@ form{
     height: 1.4rem;
     width: 4.8rem;
     font-size: 0.6rem;
+    font-weight: 700;
     font-family: sans-serif;
     color: #ff6a33;
     background-color: #fff;
@@ -585,6 +594,7 @@ form{
     height: 1.4rem;
     width: 4.8rem;
     font-size: 0.6rem;
+    font-weight: 700;
     font-family: sans-serif;
     color: #008000;
     background-color: #fff;
@@ -710,6 +720,7 @@ form{
     height: 1.4rem;
     width: 4.8rem;
     font-size: 0.6rem;
+    font-weight: 700;
     font-family: sans-serif;
     color: #ff4dd2;
     background-color: #fff;
@@ -835,6 +846,7 @@ form{
     height: 1.4rem;
     width: 4.8rem;
     font-size: 0.6rem;
+    font-weight: 700;
     font-family: sans-serif;
     color: #484c49;
     background-color: #fff;
@@ -960,6 +972,7 @@ form{
     height: 1.4rem;
     width: 4.8rem;
     font-size: 0.6rem;
+    font-weight: 700;
     font-family: sans-serif;
     color: #ba7a18;
     background-color: #fff;
@@ -990,7 +1003,8 @@ form{
     color: black;
 }
 .client-message{
-    height: 38%;
+    height: 100vh;
+    width: 100%;
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -1018,6 +1032,7 @@ form{
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
+    width: 100%;
 }
 .client-header-box{
     display: flex;
