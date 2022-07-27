@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <link href="queries.css" rel="stylesheet"/>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Responsive Dashboard</title>
+</head>
+    <body>
+        <main>
+            <section class="dashboard">
+                <header class="main-header">
+                    <div class="header">
+                        <div class="header-icon-box">
+                            <button class="open-btn" onclick="openNav()">
+                                <ion-icon class="header-icon" name="menu-outline"></ion-icon>
+                            </button>
+                            <h1 class="header-primary">Portfolio</h1>
+                            <form>
+                                <button class="search-btn" type="sabmit"></button>
+                                <input class="search" type="search" placeholder="Search..."/>
+                            </form>
+                        </div>
+                        <div class="header-link-box">
+                            <ion-icon class="add-icon" name="add-outline"></ion-icon>
+                            <ion-icon class="bell-icon" name="notifications-outline"></ion-icon>
+                            <div class="header-img-box">
+                                <img class="header-img" src="img/user2.jpg">
+                                <a class="header-link" href="#">Hira R</a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="content">
+                    <div class="main-nav">
+                        <div class="nav">
+                            <a href="#"><ion-icon class="icon nav-cta" name="home-outline"></ion-icon></a>
+                            <a href="#"><ion-icon class="icon" name="person-circle-outline"></ion-icon></a>
+                            <a href="#"><ion-icon class="icon" name="chatbox-outline"></ion-icon></a>
+                            <a href="#"><svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                class="icon" fill="none" 
+                                viewBox="0 0 24 24" 
+                                stroke="currentColor" 
+                                stroke-width="2">
+                                <path 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" 
+                                />
+                            </svg></a>
+                            <a href="#"><ion-icon class="icon" name="time-outline"></ion-icon></a>
+                            <a href="#"><ion-icon class="icon" name="settings-outline"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="project">
+                            <div class="project-text">
+                                <h1 class="project-primary">Projects</h1>
+                                <h1 class="project-primary">July, 2020</h1>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar">
+                                    <div class="progress-report">
+                                        <p class="progress-number">45</p>
+                                        <p class="progress-text">In Progress</p>
+                                    </div>
+                                    <div class="progress-report">
+                                        <p class="progress-number">12</p>
+                                        <ul class="progress-list">
+                                            <li>In Progress</li>
+                                        </ul>
+                                    </div>
+                                    <div class="progress-report">
+                                        <p class="progress-number">10</p>
+                                        <ul class="progress-list">
+                                            <li>Upcoming</li>
+                                        </ul>
+                                    </div>
+                                    <div class="progress-report">
+                                        <p class="progress-number">67</p>
+                                        <ul class="progress-list">
+                                            <li>Total Project</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="progress-icon">
+                                    <ion-icon class="menu-icon" name="menu-outline"></ion-icon>
+                                    <ion-icon class="grid-icon" name="grid-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="how-progress">
+                                <div class="work-progress">
+                                    <div class="work-text-progress">
+                                        <div class="progress-box">
+                                            <div class="how-work-progress">
+                                                <div class="time-progress">
+                                                    <p class="progress-primary">July 2, 2020</p>
+                                                    <svg 
+                                                    xmlns="http://www.w3.org/2000/svg" class="more-icon" 
+                                                    viewBox="0 0 20 20" 
+                                                    fill="currentColor"
+                                                    >
+                                                    <path 
+                                                    d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="progress-text-box">
+                                                    <p class="progress-text-primary">Web Designing</p>
+                                                    <p class="progress-text-secondary">Prototyping</p>
+                                                </div>
+                                                <div class="progress-report-box">
+                                                    <p class="primary-progress-text">
+                                                        Progress
+                                                    </p>
+                                                    <div class="meter">
+                                                        <span style="width:90%">
+                                                            <span class="progress-count"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="progress-number-box">
+                                                        <p class="progress-count-number">90%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress-people">
+                                                <div class="progress-people-box">
+                                                    <div class="people-img">
+                                                        <img class="people-img-box" src="img/user1.jpg"/>
+                                                        <img class="people-img-box" src="img/user2.jpg"/>
+                                                        <div class="count-loader">
+                                                            <h1 class="count-loader-text">+</h1>
+                                                        </div> 
+                                                    </div>
+                                                    <button class="people-btn">2 Days Left</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="work-text-progress2">
+                                        <div class="progress-box2">
+                                            <div class="how-work-progress2">
+                                                <div class="time-progress2">
+                                                    <p class="progress-primary2">July 5, 2020</p>
+                                                    <svg 
+                                                    xmlns="http://www.w3.org/2000/svg" class="more-icon2" 
+                                                    viewBox="0 0 20 20" 
+                                                    fill="currentColor"
+                                                    >
+                                                    <path 
+                                                    d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="progress-text-box2">
+                                                    <p class="progress-text-primary2">Mobile App</p>
+                                                    <p class="progress-text-secondary2">Shopping</p>
+                                                </div>
+                                                <div class="progress-report-box2">
+                                                    <p class="primary-progress-text2">
+                                                        Progress
+                                                    </p>
+                                                    <div class="meter2">
+                                                        <span style="width:30%">
+                                                            <span class="progress-count2"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="progress-number-box2">
+                                                        <p class="progress-count-number2">30%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress-people2">
+                                                <div class="progress-people-box2">
+                                                    <div class="people-img2">
+                                                        <img class="people-img-box2" src="img/user3.jpg"/>
+                                                        <img class="people-img-box2" src="img/user4.jpg"/>
+                                                        <div class="count-loader2">
+                                                            <h1 class="count-loader-text2">+</h1>
+                                                        </div> 
+                                                    </div>
+                                                    <button class="people-btn2">3 Week Left</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="work-text-progress3">
+                                        <div class="progress-box3">
+                                            <div class="how-work-progress3">
+                                                <div class="time-progress3">
+                                                    <p class="progress-primary3">July 10, 2020</p>
+                                                    <svg 
+                                                    xmlns="http://www.w3.org/2000/svg" class="more-icon3" 
+                                                    viewBox="0 0 20 20" 
+                                                    fill="currentColor"
+                                                    >
+                                                    <path 
+                                                    d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="progress-text-box3">
+                                                    <p class="progress-text-primary3">Dashboard</p>
+                                                    <p class="progress-text-secondary3">Medical</p>
+                                                </div>
+                                                <div class="progress-report-box3">
+                                                    <p class="primary-progress-text3">
+                                                        Progress
+                                                    </p>
+                                                    <div class="meter3">
+                                                        <span style="width:50%">
+                                                            <span class="progress-count3"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="progress-number-box3">
+                                                        <p class="progress-count-number3">50%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress-people3">
+                                                <div class="progress-people-box3">
+                                                    <div class="people-img3">
+                                                        <img class="people-img-box3" src="img/user5.jpg"/>
+                                                        <img class="people-img-box3" src="img/user6.jpg"/>
+                                                        <div class="count-loader3">
+                                                            <h1 class="count-loader-text3">+</h1>
+                                                        </div> 
+                                                    </div>
+                                                    <button class="people-btn3">2 Week Left</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="work-text-progress4">
+                                        <div class="progress-box4">
+                                            <div class="how-work-progress4">
+                                                <div class="time-progress4">
+                                                    <p class="progress-primary4">July 15, 2020</p>
+                                                    <svg 
+                                                    xmlns="http://www.w3.org/2000/svg" class="more-icon4" 
+                                                    viewBox="0 0 20 20" 
+                                                    fill="currentColor"
+                                                    >
+                                                    <path 
+                                                    d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="progress-text-box4">
+                                                    <p class="progress-text-primary4">Web Designing</p>
+                                                    <p class="progress-text-secondary4">Wireframing</p>
+                                                </div>
+                                                <div class="progress-report-box4">
+                                                    <p class="primary-progress-text4">
+                                                        Progress
+                                                    </p>
+                                                    <div class="meter4">
+                                                        <span style="width:20%">
+                                                            <span class="progress-count4"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="progress-number-box4">
+                                                        <p class="progress-count-number4">20%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress-people4">
+                                                <div class="progress-people-box4">
+                                                    <div class="people-img4">
+                                                        <img class="people-img-box4" src="img/user7.jpg"/>
+                                                        <img class="people-img-box4" src="img/user8.jpg"/>
+                                                        <div class="count-loader4">
+                                                            <h1 class="count-loader-text4">+</h1>
+                                                        </div> 
+                                                    </div>
+                                                    <button class="people-btn4">3 Week Left</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="work-text-progress5">
+                                        <div class="progress-box5">
+                                            <div class="how-work-progress5">
+                                                <div class="time-progress5">
+                                                    <p class="progress-primary5">July 20, 2020</p>
+                                                    <svg 
+                                                    xmlns="http://www.w3.org/2000/svg" class="more-icon5" 
+                                                    viewBox="0 0 20 20" 
+                                                    fill="currentColor"
+                                                    >
+                                                    <path 
+                                                    d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="progress-text-box5">
+                                                    <p class="progress-text-primary5">Web Designing</p>
+                                                    <p class="progress-text-secondary5">Prototyping</p>
+                                                </div>
+                                                <div class="progress-report-box5">
+                                                    <p class="primary-progress-text5">
+                                                        Progress
+                                                    </p>
+                                                    <div class="meter5">
+                                                        <span style="width:70%">
+                                                            <span class="progress-count5"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="progress-number-box5">
+                                                        <p class="progress-count-number5">70%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress-people5">
+                                                <div class="progress-people-box5">
+                                                    <div class="people-img5">
+                                                        <img class="people-img-box5" src="img/user1.jpg"/>
+                                                        <img class="people-img-box5" src="img/user2.jpg"/>
+                                                        <div class="count-loader5">
+                                                            <h1 class="count-loader-text5">+</h1>
+                                                        </div> 
+                                                    </div>
+                                                    <button class="people-btn5">5 Days Left</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="work-text-progress6">
+                                        <div class="progress-box6">
+                                            <div class="how-work-progress6">
+                                                <div class="time-progress6">
+                                                    <p class="progress-primary6">July 25, 2020</p>
+                                                    <svg 
+                                                    xmlns="http://www.w3.org/2000/svg" class="more-icon6" 
+                                                    viewBox="0 0 20 20" 
+                                                    fill="currentColor"
+                                                    >
+                                                    <path 
+                                                    d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="progress-text-box6">
+                                                    <p class="progress-text-primary6">Mobile App</p>
+                                                    <p class="progress-text-secondary6">Shopping</p>
+                                                </div>
+                                                <div class="progress-report-box6">
+                                                    <p class="primary-progress-text6">
+                                                        Progress
+                                                    </p>
+                                                    <div class="meter6">
+                                                        <span style="width:40%">
+                                                            <span class="progress-count6"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="progress-number-box6">
+                                                        <p class="progress-count-number6">40%</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="progress-people6">
+                                                <div class="progress-people-box6">
+                                                    <div class="people-img6">
+                                                        <img class="people-img-box6" src="img/user3.jpg"/>
+                                                        <img class="people-img-box6" src="img/user4.jpg"/>
+                                                        <div class="count-loader6">
+                                                            <h1 class="count-loader-text6">+</h1>
+                                                        </div> 
+                                                    </div>
+                                                    <button class="people-btn6">5 Week Left</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-header">
+                            <div class="client-header-work">
+                                <div class="client-text">
+                                    <p class="client-primary">Client Messages</p>
+                                </div>
+                                <div class="client-header-menu">
+                                    <ion-icon class="client-icon" name="search-outline"></ion-icon>
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        class="client-icon" 
+                                        viewBox="0 0 20 20" 
+                                        fill="currentColor"
+                                    >
+                                        <path 
+                                            d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" 
+                                    />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-message">
+                        <div class="client-msg">
+                            <div class="client-text-msg">
+                                <div class="client-msg-box">
+                                    <img class="client-img" src="img/user1.jpg"/>
+                                    <div class="client-msg-text">
+                                        <div class="client-header-box">
+                                            <h2 class="msg-header">David</h2>
+                                            <ion-icon class="star-icon" name="star-outline"></ion-icon>
+                                        </div>
+                                        <p class="msg-primary">Hey tell me about progress of project? Waiting for your response</p>
+                                        <div class="msg-time-box">
+                                            <p class="msg-time">21 July</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-msg">
+                            <div class="client-text-msg">
+                                <div class="client-msg-box">
+                                    <img class="client-img" src="img/user2.jpg"/>
+                                    <div class="client-msg-text">
+                                        <div class="client-header-box">
+                                            <h2 class="msg-header">Stephanie</h2>
+                                            <ion-icon class="star-icon" name="star-outline"></ion-icon>
+                                        </div>
+                                        <p class="msg-primary">I got your first assignment. I t was quite good👌 you can start work on next assignment</p>
+                                        <div class="msg-time-box">
+                                            <p class="msg-time">19 July</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-msg">
+                            <div class="client-text-msg">
+                                <div class="client-msg-box">
+                                    <img class="client-img" src="img/user3.jpg"/>
+                                    <div class="client-msg-text">
+                                        <div class="client-header-box">
+                                            <h2 class="msg-header">William</h2>
+                                            <ion-icon class="star-icon" name="star-outline"></ion-icon>
+                                        </div>
+                                        <p class="msg-primary">I want some changes in previous work you sent me. Waiting for your reply.</p>
+                                        <div class="msg-time-box">
+                                            <p class="msg-time">17 July</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-msg">
+                            <div class="client-text-msg">
+                                <div class="client-msg-box">
+                                    <img class="client-img" src="img/user4.jpg"/>
+                                    <div class="client-msg-text">
+                                        <div class="client-header-box">
+                                            <h2 class="msg-header">Alona</h2>
+                                            <ion-icon class="star-icon" name="star-outline"></ion-icon>
+                                        </div>
+                                        <p class="msg-primary">I am really impressed from your work😄 keep doing great work</p>
+                                        <div class="msg-time-box">
+                                            <p class="msg-time">15 July</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-msg">
+                            <div class="client-text-msg">
+                                <div class="client-msg-box">
+                                    <img class="client-img" src="img/user5.jpg"/>
+                                    <div class="client-msg-text">
+                                        <div class="client-header-box">
+                                            <h2 class="msg-header">Hira</h2>
+                                            <ion-icon class="star-icon" name="star-outline"></ion-icon>
+                                        </div>
+                                        <p class="msg-primary">When you start redesign of app? Previous project was perfect😍</p>
+                                        <div class="msg-time-box">
+                                            <p class="msg-time">21 July</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-msg">
+                            <div class="client-text-msg">
+                                <div class="client-msg-box">
+                                    <img class="client-img" src="img/user2.jpg"/>
+                                    <div class="client-msg-text">
+                                        <div class="client-header-box">
+                                            <h2 class="msg-header">Stephanie</h2>
+                                            <ion-icon class="star-icon" name="star-outline"></ion-icon>
+                                        </div>
+                                        <p class="msg-primary">I got your first assignment. I t was quite good👌 you can start work on next assignment</p>
+                                        <div class="msg-time-box">
+                                            <p class="msg-time">19 July</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-msg">
+                            <div class="client-text-msg">
+                                <div class="client-msg-box">
+                                    <img class="client-img" src="img/user4.jpg"/>
+                                    <div class="client-msg-text">
+                                        <div class="client-header-box">
+                                            <h2 class="msg-header">Alona</h2>
+                                            <ion-icon class="star-icon" name="star-outline"></ion-icon>
+                                        </div>
+                                        <p class="msg-primary">I am really impressed from your work😄 keep doing great work</p>
+                                        <div class="msg-time-box">
+                                            <p class="msg-time">15 July</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="client-msg">
+                            <div class="client-text-msg">
+                                <div class="client-msg-box">
+                                    <img class="client-img" src="img/user1.jpg"/>
+                                    <div class="client-msg-text">
+                                        <div class="client-header-box">
+                                            <h2 class="msg-header">David</h2>
+                                            <ion-icon class="star-icon" name="star-outline"></ion-icon>
+                                        </div>
+                                        <p class="msg-primary">Hey tell me about progress of project? Waiting for your response</p>
+                                        <div class="msg-time-box">
+                                            <p class="msg-time">21 July</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

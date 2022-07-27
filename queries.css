@@ -1,0 +1,229 @@
+@media (max-width: 55em){
+    html{
+        font-size: 90%;
+    }
+    .content{
+        grid-template-columns:3fr;
+    }
+    .main-nav{
+        display: none;
+    }
+    .header-icon-box{
+        display: flex;
+        gap: 1.4rem;
+    }
+    .search-btn{
+        background-size: cover;
+        cursor: pointer;
+        width: 19%;
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+    .search{
+        width: 20vw;
+    }
+    .work-progress{
+        column-gap: 1.2rem;
+        row-gap: 1.2rem;
+    }
+    .client-img{
+        height: 3.6rem;
+        width: 3.6rem;
+    }
+    .msg-header{
+        font-size: 1.4rem;
+    }
+    .star-icon{
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+    .msg-primary{
+        font-size: 1.2rem;
+    }
+    .project{
+        margin: 2.2rem;
+    }
+    .project-primary{
+        font-size: 1.2rem;
+    }
+    .progress-number{
+        font-size: 1.2rem;
+    }
+    .progress-text{
+        font-size: 0.8rem;
+    }
+    .progress-list{
+        font-size: 0.8rem;
+    }
+    .progress-primary,
+    .progress-primary2,
+    .progress-primary3,
+    .progress-primary4,
+    .progress-primary5,
+    .progress-primary6{
+        font-size: 1rem;
+    }
+    .more-icon,
+    .more-icon2,
+    .more-icon3,
+    .more-icon4,
+    .more-icon5,
+    .more-icon6{
+        height: 1rem;
+        width: 1rem;
+    }
+    .progress-text-primary,
+    .progress-text-primary2,
+    .progress-text-primary3,
+    .progress-text-primary4,
+    .progress-text-primary5,
+    .progress-text-primary6{
+        font-size: 1rem;
+    }
+    .progress-text-secondary,
+    .progress-text-secondary2,
+    .progress-text-secondary3,
+    .progress-text-secondary4,
+    .progress-text-secondary5,
+    .progress-text-secondary6{
+        font-size: 1rem;
+    }
+    .primary-progress-text,
+    .primary-progress-text2,
+    .primary-progress-text3,
+    .primary-progress-text4,
+    .primary-progress-text5,
+    .primary-progress-text6{
+        font-size: 1rem;
+    }
+    .progress-count-number,
+    .progress-count-number2,
+    .progress-count-number3,
+    .progress-count-number4,
+    .progress-count-number5,
+    .progress-count-number6{
+        font-size: 0.8rem;
+    }
+    .people-img-box,
+    .people-img-box2,
+    .people-img-box3,
+    .people-img-box4,
+    .people-img-box5,
+    .people-img-box6{
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+    .count-loader,
+    .count-loader2,
+    .count-loader3,
+    .count-loader4,
+    .count-loader5,
+    .count-loader6{
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+    .count-loader-text,
+    .count-loader-text2,
+    .count-loader-text3,
+    .count-loader-text4,
+    .count-loader-text5,
+    .count-loader-text6{
+        font-size: 1rem;
+        padding-top: 0.1rem;
+    }
+    .people-btn,
+    .people-btn2,
+    .people-btn3,
+    .people-btn4,
+    .people-btn5,
+    .people-btn6{
+        height: 1.6rem;
+        width: 5.2rem;
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 40em){
+    .work-progress{
+        grid-template-columns: 1fr;
+    }
+    .header-icon-box{
+        display: flex;
+        gap: 0.6rem;
+    }
+    .project{
+        margin-top: 2.2rem;
+    }
+    .main-header{
+        padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+    }
+    .header-icon{
+        height: 1.2rem;
+        width: 1.2rem;
+        margin-top: 0.2rem;
+    }
+    .header-primary{
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 0.2rem;
+    }
+    .header-link-box{
+        gap: 0.4rem;
+    }
+    .header-img{
+        cursor: pointer;
+    }
+    .header-link{
+        display: none;
+    }
+    .client-primary{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .client-img{
+        height: 2.2rem;
+        width: 2.2rem;
+    }
+    .msg-header{
+        font-size: 1rem;
+    }
+    .star-icon{
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+    .msg-primary{
+        font-size: 0.8rem;
+    }
+    .client-message{
+        height: 100vh;
+    }
+}
+@media (max-width: 70em){
+    .work-progress{
+        column-gap: 0.6rem;
+        row-gap: 0.6rem;
+    }
+    .project{
+        margin: 1.6rem;
+    }
+    .project-primary{
+        font-size: 1rem;
+    }
+    .progress-number{
+        font-size: 1rem;
+    }
+    .progress-text{
+        font-size: 0.6rem;
+    }
+    .progress-list{
+        font-size: 0.6rem;
+    }
+    .dashboard{
+        height: 100%;
+    }
+    .client-message{
+        height: 100vh;
+    }
+    .container{
+        height: 130vh;
+    }
+}
