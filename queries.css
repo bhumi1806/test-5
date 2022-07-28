@@ -4,12 +4,16 @@
 @media (max-width: 59em){
     .dashboard{
         height: 100%;
+        grid-template-rows: 1fr;
     }
     .main-nav{
         display: none;
     }
-    .content{
-        grid-template-columns: 1fr;
+    .container{
+        grid-column: 1 / span 3;
+    }
+    .client{
+        grid-column: 1 / span 3;
     }
     .client-img{
         height: 3.6rem;
@@ -127,11 +131,12 @@
         font-size: 0.7rem;
     }
     .main-header{
+        grid-template-rows: 1 / span 1;
         padding: 0.6rem 0.8rem 0.6rem 0.8rem;
     }
     .header-icon{
-        height: 1.2rem;
-        width: 1.2rem;
+        height: 2rem;
+        width: 2rem;
         margin-top: 0.2rem;
     }
     .header-img{
@@ -142,7 +147,7 @@
     }
     .header-icon-box{
         display: flex;
-        gap: 1.4rem;
+        justify-content: space-between;
     }
     .header-primary{
         font-size: 1.2rem;
@@ -203,6 +208,6 @@
     }
     .header-icon-box{
         display: flex;
-        gap: 1rem;
+        justify-content: space-between;
     }
 }

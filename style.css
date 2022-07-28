@@ -22,21 +22,16 @@ body{
 .dashboard{
     background-color: #f1fdf2;
     height: 100vh;
-}
-.main-header{
-    padding: 0.8rem 1.2rem 0.8rem 2.4rem;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 3.2rem;
     width: 100%;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 6fr 4fr;
+    /* grid-template-rows: 1fr 2fr ; */
 }
-.header-icon-box{
+.header-icon-open{
+    grid-column: 1 /span 1;
+    margin: 0.8rem;
     display: flex;
-    gap: 4.2rem;
+    justify-content: center;
     align-items: center;
 }
 .open-btn{
@@ -48,6 +43,23 @@ body{
     height: 1.8rem;
     width: 1.8rem;
     color: black;
+}
+.main-header{
+    grid-column: 2 /span 2;
+    padding: 0.8rem 1.2rem 0.8rem 2.4rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.2rem;
+    /* width: 100%; */
+    position: relative;
+}
+.header-icon-box{
+    display: flex;
+    gap: 4.2rem;
+    align-items: center;
 }
 .header-primary{
     font-size: 1.6rem;
@@ -128,12 +140,9 @@ form{
     font-weight: 600;
     color: black;
     text-decoration: none;
-}
-.content{
-    display: grid;
-    grid-template-columns: 1fr 6fr 4fr;
-}
+}    
 .main-nav{
+    grid-row: 2 / span 1;
     margin: 2.2rem 1.2rem 3.2rem 1.8rem;
 }
 .nav{
@@ -163,6 +172,7 @@ form{
     margin-bottom: 1.4rem;
 }
 .container{
+    grid-column: 2 /span 1;
     background-color: #fff;
     border-radius: 50px;
     /* max-height: 800px; */
@@ -982,6 +992,7 @@ form{
 /* client message */
 .client{
     margin: 2.2rem 0;
+    grid-column: 3 / span 3;
 }
 .client-header{
     border-bottom: 1px solid lightgrey;
