@@ -147,7 +147,7 @@
     }
     .header-icon-box{
         display: flex;
-        justify-content: space-between;
+        gap: 2.2rem;
     }
     .header-primary{
         font-size: 1.2rem;
@@ -208,6 +208,6 @@
     }
     .header-icon-box{
         display: flex;
-        justify-content: space-between;
+        gap: 1.8rem;
     }
 }
