@@ -226,7 +226,7 @@
     }
 }
 /******************************/
-/* BELOW 544PX (Phones) */
+/* BELOW 425PX (Phones) */
 /******************************/
 @media (max-width: 425px){
     .header-icon{
