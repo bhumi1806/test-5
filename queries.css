@@ -245,9 +245,12 @@
     .header-img-box{
         padding-left: 0.8rem;
     }
-    .progress-bar{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .progress{
+        display: flex;
+        flex-direction: column;
+    }
+    .progress-icon{
+        align-self: end;
     }
     form{
         padding: 0.2rem;
