@@ -221,6 +221,9 @@
     .main-header{
         padding: 0.4rem 0.6rem 0.4rem 0rem;
     }
+    .progress-bar{
+        gap: 1rem;
+    }
 }
 /******************************/
 /* BELOW 544PX (Phones) */
@@ -245,5 +248,35 @@
     .progress-bar{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    form{
+        padding: 0.2rem;
+        width: auto;
+    }
+    .search-icon{
+        height: 0.8rem;
+        width: 0.8rem;
+    }
+    .search-btn{
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+    .search{
+        display: none;
+    }
+    .add-icon{
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+    .bell-icon{
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+    .header-img{
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+    .header-img-box{
+        padding-left: 0.6rem;
     }
 }
