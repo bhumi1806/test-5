@@ -25,7 +25,7 @@ body{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 6fr 4fr;
-    /* grid-template-rows: 1fr 2fr ; */
+    grid-template-rows: 1fr 2fr ;
 }
 .header-icon-open{
     grid-column: 1 /span 1;
@@ -53,7 +53,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 3.2rem;
-    /* width: 100%; */
+    width: 100%;
     position: relative;
 }
 .header-icon-box{
